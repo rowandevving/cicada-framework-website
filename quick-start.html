@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cicada Framework</title>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Cicada Framework</h1>
+      <p>General use GUI framework wrapping native APIs </p>
+      <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="current" href="/quick-start.html">Quick Start</a></li>
+            <li><a href="https://github.com/SigmaEG/Cicada-Framework">Source</a></li>
+          </ul>
+      </nav>
+    </header>
+  
+    <main>
+        <p><strong>Requires Visual Studio 2022</strong></p>
+        <p>OR</p>
+        <p>Change the <strong><i>Platform Toolset (Compiler)</i></strong> in <strong><i>Configuration Properties</i></strong> -> <strong><i>Platform Toolset</i></strong> to <strong><i>Visual Studio 2019 (v142)</i></strong></p>
+        <h2>Building for implementation</h2>
+        <p class="instruction">Clone the repo to wherever you wish</p>
+        <p class="instruction">Open <strong>Cicada\Cicada Framework.sln</strong></p>
+        <p class="instruction">Build <strong>Debug/x86, Debug/x64, Release/x86, Release/x64</strong> (use <kbd>CTRL</kbd> + <kbd>B</kbd> to build)</p>
+        <h2>Including the Cicada Framework in your project</h2>
+        <p class="instruction">Create an <strong><i>Empty C++ Project</i></strong></p>
+        <p class="instruction">Create a <strong>.c/.cpp</strong> file in <strong>Source Files</strong></p>
+        <p class="instruction"></p>Right-Click the <strong>Project</strong> in Visual Studio and select <strong>"Properties"</strong> to enter <strong><i>Configuration Properties</i></strong>
+        <p class="instruction">Ensure the <strong><i>Platform Toolset (Compiler)</i></strong> is the same as the one used for building the framework</p>
+        <p class="instruction">Go to <strong><i>C/C++</i></strong> -> <strong>General</strong> in <strong><i>Configuration Properties</i></strong></p>
+        <p class="instruction">Edit <strong><i>"Additional Include Directories"</i></strong> and include <strong>Cicada Framework\include (for all configurations and platforms)</strong></p>
+        <p class="instruction">Go to <strong><i>Linker</i></strong> -> <strong><i>Input</i></strong> in <strong><i>Configuration Properties</i></strong></p>
+        <p class="instruction">Edit <strong><i>"Additional Dependencies"</i></strong> to include <strong><i>Cicada Framework\lib\libcic_frmwk_[your platform and configuration]__.lib</i></strong></p>
+        <p class="notice">⚠️ Ensure each configuration and platform has it's matching <strong><i>libcic_frmwk_x__.lib</i></strong> file. Lib files for debugging purposes will also have a "debug" on the end.</p>
+        <p>Clone the <strong><i>example</i></strong> branch to run an example use case</p>
+    </main>
+  
+    <footer>
+        <p>Created by <a href=https://github.com/SigmaEG>Sigma</a></p>
+      <p>Website & logo by <a href="https://github.com/rowandevving">Rowan</a> with styling from SimpleCSS</p>
+    </footer>
+  </body>
+  </html>

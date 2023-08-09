@@ -1,0 +1,7 @@
+:root {
+  --accent: rgb(205,73,72);
+}
+.instruction {
+  margin-bottom: 1.7px;
+  margin-top: 1.7px;
+}
