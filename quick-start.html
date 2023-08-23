@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cicada is a powerful C/C++ GUI library that is built on native APIs">
     <meta name="keywords" content="C, C++, GUI, Library, API, Programming, Windows, Linux">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Cicada Framework</title>
@@ -18,19 +19,17 @@
     </style>
 </head>
 <body>
-    <header>
-      <h1>Cicada Framework</h1>
-      <p>General use GUI framework wrapping native APIs </p>
-      <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="current" href="/quick-start.html">Quick Start</a></li>
-            <li><a href="https://github.com/SigmaEG/Cicada-Framework">Source</a></li>
-          </ul>
-      </nav>
-    </header>
+  <header>
+    <h1 align="center">Cicada Framework</h1>
+    <p align="center">General use GUI framework wrapping native APIs </p>
+    <p align="center">
+      <a href="/index.html"><button>Home</button></a>
+      <a href="/quick-start.html"><button>Quick Start</button></a>
+      <a href="https://github.com/sigmaeg/cicada-framework"><button>Source</button></a>
+    </p>
+  </header>
   
-    <main>
+    <div>
         <p><strong>Requires Visual Studio 2022</strong></p>
         <p>OR</p>
         <p>Change the <strong><i>Platform Toolset (Compiler)</i></strong> in <strong><i>Configuration Properties</i></strong> -> <strong><i>Platform Toolset</i></strong> to <strong><i>Visual Studio 2019 (v142)</i></strong></p>
@@ -47,13 +46,14 @@
         <p class="instruction">Edit <strong><i>"Additional Include Directories"</i></strong> and include <strong>Cicada Framework\include (for all configurations and platforms)</strong></p>
         <p class="instruction">Go to <strong><i>Linker</i></strong> -> <strong><i>Input</i></strong> in <strong><i>Configuration Properties</i></strong></p>
         <p class="instruction">Edit <strong><i>"Additional Dependencies"</i></strong> to include <strong><i>Cicada Framework\lib\libcic_frmwk_[your platform and configuration]__.lib</i></strong></p>
-        <p class="notice">⚠️ Ensure each configuration and platform has it's matching <strong><i>libcic_frmwk_x__.lib</i></strong> file. Lib files for debugging purposes will also have a "debug" on the end.</p>
+        <p><blockquote>⚠️ Ensure each configuration and platform has it's matching <strong><i>libcic_frmwk_x__.lib</i></strong> file. Lib files for debugging purposes will also have a "debug" on the end.</blockquote></p>
         <p>Clone the <strong><i>example</i></strong> branch to run an example use case</p>
-    </main>
+    </div>
   
     <footer>
-        <p>Created by <a href=https://github.com/SigmaEG>Sigma</a></p>
-      <p>Website & logo by <a href="https://github.com/rowandevving">Rowan</a> with styling from SimpleCSS</p>
-    </footer>
+      <hr>
+      <p align="center">Cicada Framework was created by <a href=https://github.com/SigmaEG>Sigma</a> and is licensed under the MIT license</p>
+      <p align="center">Website & logo by <a href="https://github.com/rowandevving">Rowan</a> with styling from new.css</p>
+    </footer> 
   </body>
   </html>
