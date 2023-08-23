@@ -1,10 +1,15 @@
-:root {
-  --accent: rgb(205,73,72);
-}
 .instruction {
   margin-bottom: 1.7px;
   margin-top: 1.7px;
 }
 .pfp {
   border-radius: 50%;
+}
+.error {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
