@@ -145,6 +145,7 @@ h6 {
 
 a {
 	color: var(--nc-lk-1);
+	text-decoration: none;
 }
 
 a:hover {
